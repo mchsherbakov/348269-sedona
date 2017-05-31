@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <nav class="mobile-menu">
+      <ul class="menu-list">
+      <li class="menu-list__item">
+        <a href="#"> главная </a>
+      </li>
+      <li class="menu-list__item">
+        <a href="photo.html"> фото и видео </a>
+      </li>
+      <li class="menu-list__item">
+        <a href="form.html"> форма отзыва </a>
+      </li>
+      <li class="menu-list__item">
+        <a href="#">  html academy </a>
+      </li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <input type="image" src="http://placehold.it/150x100" alt="Закрыть">
+      </div>
+    </nav>
+    <section class="intro">
+      <h1 class="intro-header"> оставьте свой отзыв </h1>
+      <p> помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях </p>
+    </section>
+    <form action="/echo" method="post" class="page-form">
+      <fieldset class="first-fieldset">
+        <legend class="first-fieldset__legend"> представьтесь: </legend>
+          <label for="name" class="first-fieldset__label"> имя*: </label>
+          <input type="text" id="name" name="name" value="Петр" class="first-fieldset__input">
+          <label for="name" class="first-fieldset__label"> фамилия*: </label>
+          <input type="text" id="surname" name="surname" value="Иванов" class="first-fieldset__input">
+          <label for="name" class="first-fieldset__label"> отчество: </label>
+          <input type="text" id="patronymic" name="patronymic" value="Александрович" class="first-fieldset__input">
+      </fieldset>
+      <fieldset class="second-fieldset">
+        <legend class="second-fieldset__legend"> контактная информация: </legend>
+          <label for="tel" class="second-fieldset__label"> контактный телефон*: </label>
+          <input type="tel" id="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" class="second-fieldset__input">
+          <label for="email" class="second-fieldset__label"> электронная почта*: </label>
+          <input type="email" id="email" name="email" placeholder="Введите e-mail" class="second-fieldset__input">
+      </fieldset>
+      <fieldset class="third-fieldset">
+        <legend class="third-fieldset__legend"> ваше общее впечатление: </legend>
+          <input type="radio" id="question-1" name="question-1" value="Скорее положительное" class="third-fieldset__input">
+          <label for="question-1" class="third-fieldset__label"> Скорее положительное </label>
+          <input type="radio" id="question-2" name="question-2" value="Скорее отрицательное" class="third-fieldset__input">
+          <label for="question-2" class="third-fieldset__label"> Скорее отрицательное </label>
+          <input type="radio" id="question-3" name="question-3" value="Затрудняюсь ответить" class="third-fieldset__input">
+          <label for="question-3" class="third-fieldset__label"> Затрудняюсь ответить </label>
+      </fieldset>
+      <fieldset class="fouth-fieldset">
+        <legend class="fouth-fieldset__legend"> посещенные достопримечательности: </legend>
+          <input type="checkbox" id="checkbox-1" name="checkbox-1" class="fouth-fieldset__input">
+          <label for="checkbox-1" class="fouth-fieldset__label"> Мост Дьявола </label>
+          <input type="checkbox" id="checkbox-2" name="checkbox-2" class="fouth-fieldset__input">
+          <label for="checkbox-2" class="fouth-fieldset__label"> Слайд-парк </label>
+          <input type="checkbox" id="checkbox-3" name="checkbox-3" class="fouth-fieldset__input">
+          <label for="checkbox-3" class="fouth-fieldset__label"> Гора-Колокол </label>
+          <input type="checkbox" id="checkbox-4" name="checkbox-4" class="fouth-fieldset__input">
+          <label for="checkbox-4" class="fouth-fieldset__label"> Красные скалы </label>
+      </fieldset>
+      <fieldset class="fifth-fieldset">
+        <legend class="fifth-fieldset__legend"> опишите свои эмоции: </legend>
+        <input type="text" name="emotions">
+      </fieldset>
+      <button type="submit"> отправить отзыв </button>
+    </form>
+    <footer class="page-footer">
+      <div class="page-footer__hashtag">
+        <a href="#"> #visitsedona </a>
+      </div>
+      <div class="social-links">
+          <a class="social-links__item" href="#"> tweeter </a>
+          <a class="social-links__item" href="#"> facebook </a>
+          <a class="social-links__item" href="#"> youtube </a>
+      </div>
+      <div class="page-footer__developer">
+        <span> разработано </span>
+        <a href="#"> </a>
+      </div>
+    </footer>
+  </body>
+</html>
