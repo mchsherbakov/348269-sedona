@@ -5,85 +5,96 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <nav class="mobile-menu">
+    <header class="header">
+    <a href="index.html" class="sedona-logo">
+      <img src="http://placehold.it/150x100" alt="picture-0">
+    </a>
+    <nav class="menu">
       <ul class="menu-list">
       <li class="menu-list__item">
-        <a href="#"> главная </a>
+        <a href="index.html">главная</a>
       </li>
       <li class="menu-list__item">
-        <a href="photo.html"> фото и видео </a>
+        <a href="photo.html">фото и видео</a>
       </li>
       <li class="menu-list__item">
-        <a href="form.html"> форма отзыва </a>
+        <a href="form.html">форма отзыва</a>
       </li>
       <li class="menu-list__item">
-        <a href="#">  html academy </a>
+        <a href="#">html academy</a>
       </li>
       </ul>
-      <div class="mobile-menu-btn">
-        <input type="image" src="http://placehold.it/150x100" alt="Закрыть">
-      </div>
     </nav>
+      <button type="button" class="btn-menu">Закрыть</button>
+    </header>
     <section class="intro">
-      <h1 class="intro-header"> оставьте свой отзыв </h1>
-      <p> помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях </p>
+      <h1 class="intro-header">Оставьте свой отзыв</h1>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
-    <form action="/echo" method="post" class="page-form">
-      <fieldset class="first-fieldset">
-        <legend class="first-fieldset__legend"> представьтесь: </legend>
-          <label for="name" class="first-fieldset__label"> имя*: </label>
-          <input type="text" id="name" name="name" value="Петр" class="first-fieldset__input">
-          <label for="name" class="first-fieldset__label"> фамилия*: </label>
-          <input type="text" id="surname" name="surname" value="Иванов" class="first-fieldset__input">
-          <label for="name" class="first-fieldset__label"> отчество: </label>
-          <input type="text" id="patronymic" name="patronymic" value="Александрович" class="first-fieldset__input">
+    <form action="https://htmlacademy.ru/echo" method="post" class="page-form">
+      <fieldset class="form-group">
+        <legend class="form-group__title">Представьтесь:</legend>
+          <label for="name" class="form__label">Имя*:</label>
+          <input type="text" id="name" name="name" value="Петр" class="form-field">
+          <label for="name" class="form__label">Фамилия*:</label>
+          <input type="text" id="surname" name="surname" value="Иванов" class="form-field">
+          <label for="name" class="form__label">Отчество:</label>
+          <input type="text" id="patronymic" name="patronymic" value="Александрович" class="form-field">
       </fieldset>
-      <fieldset class="second-fieldset">
-        <legend class="second-fieldset__legend"> контактная информация: </legend>
-          <label for="tel" class="second-fieldset__label"> контактный телефон*: </label>
-          <input type="tel" id="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" class="second-fieldset__input">
-          <label for="email" class="second-fieldset__label"> электронная почта*: </label>
-          <input type="email" id="email" name="email" placeholder="Введите e-mail" class="second-fieldset__input">
+      <fieldset class="form-group">
+        <legend class="form-group__title">Контактная информация:</legend>
+          <label for="tel" class="form__label">Контактный телефон*:</label>
+          <input type="tel" id="tel" name="tel" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" class="form-field">
+          <label for="email" class="form__label">Электронная почта*:</label>
+          <input type="email" id="email" name="email" placeholder="Введите e-mail" class="form-field">
       </fieldset>
-      <fieldset class="third-fieldset">
-        <legend class="third-fieldset__legend"> ваше общее впечатление: </legend>
-          <input type="radio" id="question-1" name="question-1" value="Скорее положительное" class="third-fieldset__input">
-          <label for="question-1" class="third-fieldset__label"> Скорее положительное </label>
-          <input type="radio" id="question-2" name="question-2" value="Скорее отрицательное" class="third-fieldset__input">
-          <label for="question-2" class="third-fieldset__label"> Скорее отрицательное </label>
-          <input type="radio" id="question-3" name="question-3" value="Затрудняюсь ответить" class="third-fieldset__input">
-          <label for="question-3" class="third-fieldset__label"> Затрудняюсь ответить </label>
+      <fieldset class="form-group">
+        <legend class="form-group__title">Ваше общее впечатление:</legend>
+          <input type="radio" id="question-1" name="question-1" value="Скорее положительное" class="form-field">
+          <label for="question-1" class="form__label">Скорее положительное</label>
+          <input type="radio" id="question-2" name="question-2" value="Скорее отрицательное" class="form-field">
+          <label for="question-2" class="form__label">Скорее отрицательное</label>
+          <input type="radio" id="question-3" name="question-3" value="Затрудняюсь ответить" class="form-field">
+          <label for="question-3" class="form__label">Затрудняюсь ответить</label>
       </fieldset>
-      <fieldset class="fouth-fieldset">
-        <legend class="fouth-fieldset__legend"> посещенные достопримечательности: </legend>
-          <input type="checkbox" id="checkbox-1" name="checkbox-1" class="fouth-fieldset__input">
-          <label for="checkbox-1" class="fouth-fieldset__label"> Мост Дьявола </label>
-          <input type="checkbox" id="checkbox-2" name="checkbox-2" class="fouth-fieldset__input">
-          <label for="checkbox-2" class="fouth-fieldset__label"> Слайд-парк </label>
-          <input type="checkbox" id="checkbox-3" name="checkbox-3" class="fouth-fieldset__input">
-          <label for="checkbox-3" class="fouth-fieldset__label"> Гора-Колокол </label>
-          <input type="checkbox" id="checkbox-4" name="checkbox-4" class="fouth-fieldset__input">
-          <label for="checkbox-4" class="fouth-fieldset__label"> Красные скалы </label>
+      <fieldset class="form-group">
+        <legend class="form-group__title">Посещенные достопримечательности:</legend>
+          <input type="checkbox" id="checkbox-1" name="checkbox-1" class="form-field">
+          <label for="checkbox-1" class="form__label">Мост Дьявола</label>
+          <input type="checkbox" id="checkbox-2" name="checkbox-2" class="form-field">
+          <label for="checkbox-2" class="form__label">Слайд-парк</label>
+          <input type="checkbox" id="checkbox-3" name="checkbox-3" class="form-field">
+          <label for="checkbox-3" class="form__label">Гора-Колокол</label>
+          <input type="checkbox" id="checkbox-4" name="checkbox-4" class="form-field">
+          <label for="checkbox-4" class="form__label">Красные скалы</label>
       </fieldset>
-      <fieldset class="fifth-fieldset">
-        <legend class="fifth-fieldset__legend"> опишите свои эмоции: </legend>
-        <input type="text" name="emotions">
-      </fieldset>
-      <button type="submit"> отправить отзыв </button>
+      <label for="emotions" class="form-group__title">Опишите свои эмоции:</label>
+      <textarea class="form__field form__field--textarea" name="emotions" id="emotions" rows="8">Опишите подробно все свои восторги</textarea>
+      <button type="submit">Отправить отзыв</button>
     </form>
     <footer class="page-footer">
       <div class="page-footer__hashtag">
-        <a href="#"> #visitsedona </a>
+        <a href="#">#visitsedona</a>
       </div>
       <div class="social-links">
-          <a class="social-links__item" href="#"> tweeter </a>
-          <a class="social-links__item" href="#"> facebook </a>
-          <a class="social-links__item" href="#"> youtube </a>
+          <a class="social-links__item" href="#">Twitter</a>
+          <a class="social-links__item" href="#">Facebook</a>
+          <a class="social-links__item" href="#">Youtube</a>
       </div>
       <div class="page-footer__developer">
-        <span> разработано </span>
+        <span>Разработано</span>
         <a href="#"> </a>
       </div>
     </footer>
+    <div class="failure-popup">
+      <h2 class="failure-popup__title">Что-то пошло не так!</h2>
+      <p class="failure-popup__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="button" class="failure-popup__btn">Ok</button>
+    </div>
+    <div class="success-popup">
+      <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
+      <p class="success-popup__desc">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button type="button" class="success-popup__btn">Закрыть окно</button>
+    </div>
   </body>
 </html>
