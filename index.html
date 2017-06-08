@@ -4,13 +4,16 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
+<body class="container">
+    <header class="page-header">
         <a href="#" class="sedona-logo">
-            <img src="http://placehold.it/150x100" alt="picture-0">
+            <img src="img/logo-sedona-mobile.svg" alt="picture-0">
         </a>
+        <button type="button" class="btn-menu">Открыть</button>
         <nav class="menu">
             <ul class="menu-list">
                 <li class="menu-list__item">
@@ -32,79 +35,77 @@
 
     <section class="intro">
         <div class="intro__img">
-            <img src="http://placehold.it/150x100" alt="intro">
+            <img src="img/text-sedona-index.svg" alt="intro" width="280" height="220">
         </div>
     </section>
 
     <section class="advantages">
 
-        <h1 class="advantages__header">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым седона круче чем гранд каньон</p>
+        <h1 class="advantages__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+        <p class="advantages__desc">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
 
-        <div class="advantages-item">
+        <div class="advantages-item advantages-item--big">
             <h2 class="advantages-item-title">Настоящий городок</h2>
             <div class="advantages-item__number">- №1 -</div>
             <p class="advantages-item__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <div class="advantages-item__img"> <img src="http://placehold.it/150x100" alt="city-pic"> </div>
+            <div class="advantages-item__img advantages-item__img--big"><img src="img/photo-city-mobile@1x.jpg" alt="city-pic" width="320" height="262"></div>
         </div>
 
-        <div class="advantages-item">
-            <div class="advantages-item__img"> <img src="http://placehold.it/150x100" alt="home-pic"> </div>
+        <div class="advantages-item advantage-item--small">
+            <div class="advantages-item__img "> <img src="img/icon-house.svg" alt="home-pic" width="40" height="40"> </div>
             <h2 class="advantages-item-title">Жилье</h2>
             <p class="advantages-item__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="advantages-item">
-            <div class="advantages-item__img"> <img src="http://placehold.it/150x100" alt="gift-pic"> </div>
+        <div class="advantages-item advantage-item--small">
+            <div class="advantages-item__img "> <img src="img/icon-gift.svg" alt="gift-pic" width="40" height="40"> </div>
             <h2 class="advantages-item-title">Сувениры</h2>
             <p class="advantages-item__desc">Не только китайского, но и местного производства!</p>
         </div>
-        <div class="advantages-item">
-            <div class="advantages-item__img"> <img src="http://placehold.it/150x100" alt="food-pic"> </div>
+        <div class="advantages-item advantage-item--small">
+            <div class="advantages-item__img "> <img src="img/icon-burger.svg" alt="food-pic" width="40" height="40"> </div>
             <h2 class="advantages-item-title">Еда</h2>
             <p class="advantages-item__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="advantages-item">
+        <div class="advantages-item advantages-item--big">
             <h2 class="advantages-item-title">Там есть мост дьявола</h2>
             <div class="advantages-item__number">- №2 -</div>
             <p class="advantages-item__desc">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
-            <div class="advantages-item__img"> <img src="http://placehold.it/150x100" alt="bridge-pic"> </div>
+            <div class="advantages-item__img advantages-item__img--big"> <img src="img/photo-bridge-mobile@1x.jpg" alt="bridge-pic" width="320" height="262"> </div>
         </div>
-        <div class="advantages-item">
+        <div class="advantages-item advantage-item--middle">
             <h2 class="advantages-item-title">Небольшая площадь</h2>
             <div class="advantages-item__number">- №3 -</div>
             <p class="advantages-item__desc">Все интересные места находяться очень близко</p>
         </div>
-        <div class="advantages-item">
+        <div class="advantages-item advantage-item--middle">
             <h2 class="advantages-item-title">Красивая дорога</h2>
             <div class="advantages-item__number">- №4 -</div>
             <p class="advantages-item__desc">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
-        <div class="advantages-item">
+        <div class="advantages-item advantage-item--middle">
             <h2 class="advantages-item-title">Мало туристов</h2>
             <div class="advantages-item__number">- №5 -</div>
             <p class="advantages-item__desc">Большинство едет в гранд каньон и толпится там</p>
         </div>
     </section>
     <section class="search-block">
-        <h3 class="search-block__header">Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <h3 class="search-block__title">Заинтересовались?</h3>
+        <p class="search-block__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="form.html" class="btn search-block__btn">Найти гостиницу</a>
     </section>
-    <section class="map">
-        <img src="http://placehold.it/150x100" alt="map">
-    </section>
+    <section class="map"></section>
     <footer class="page-footer">
         <div class="page-footer__hashtag">
             <a href="#">#visitsedona</a>
         </div>
         <div class="social-links">
-            <a class="social-links__item" href="#">Twitter</a>
-            <a class="social-links__item" href="#">Facebook</a>
-            <a class="social-links__item" href="#">Youtube</a>
+            <a class="social-links__item social-links__item--twitter" href="#">Twitter</a>
+            <a class="social-links__item social-links__item--facebook" href="#">Facebook</a>
+            <a class="social-links__item social-links__item--youtube" href="#">Youtube</a>
         </div>
         <div class="page-footer__developer">
             <span>Разработано</span>
-            <a href="#"> </a>
+            <a href="#" class="page-footer__developer-img">htmlacademy</a>
         </div>
     </footer>
 </body>

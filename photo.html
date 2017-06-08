@@ -4,20 +4,24 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
+<body class="container">
+    <header class="page-header">
+
         <a href="index.html" class="sedona-logo">
-            <img src="http://placehold.it/150x100" alt="picture-0">
+            <img src="img/logo-sedona-mobile.svg" alt="picture-0">
         </a>
+        <button type="button" class="btn-menu">Открыть</button>
         <nav class="menu">
             <ul class="menu-list">
                 <li class="menu-list__item">
                     <a href="index.html">главная</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="photo.html">фото и видео</a>
+                    <a href="#">фото и видео</a>
                 </li>
                 <li class="menu-list__item">
                     <a href="form.html">форма отзыва</a>
@@ -29,45 +33,46 @@
         </nav>
         <button type="button" class="btn-menu">Закрыть</button>
     </header>
-    <section class="intro">
-        <h1 class="intro-header">Фото и видео</h1>
-        <p>Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике</p>
+    <section class="intro intro--small">
+        <img src="img/text-sedona.svg" alt="sedona-text" width="229" height="41">
     </section>
     <section class="gallery">
+        <h1 class="gallery-title">Фото и видео</h1>
+        <p class="gallery-desc">Не можете решиться на путешествие из-за курса? фотографии помогут<br>вам забыть о политике и экономике</p>
         <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="http://placehold.it/150x100" alt="picture-1"> </div>
+            <div class="foto-sample__img"> <img src="img/photo-1-mobile@1x.jpg" alt="picture-1" width="280" height="280"> </div>
             <h2 class="foto-sample__title">Неродные просторы</h2>
             <p>Автор фото: Борис</p>
-            <button type="button" class="foto-sample__like-btn">Like</button>
+            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
             <div class="foto-sample__likes">1350</div>
         </div>
         <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="http://placehold.it/150x100" alt="picture-2"> </div>
+            <div class="foto-sample__img"> <img src="img/photo-2-mobile@1x.jpg" alt="picture-2" width="280" height="280"> </div>
             <h2 class="foto-sample__title">Местная растительность</h2>
             <p>Автор фото: Борис</p>
-            <button type="button" class="foto-sample__like-btn">Like</button>
+            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
             <div class="foto-sample__likes">1350</div>
         </div>
         <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="http://placehold.it/150x100" alt="picture-3"> </div>
+            <div class="foto-sample__img"> <img src="img/photo-3-mobile@1x.jpg" alt="picture-3" width="280" height="280"> </div>
             <h2 class="foto-sample__title">Дорога на север</h2>
             <p>Автор фото: Петр</p>
-            <button type="button" class="foto-sample__like-btn">Like</button>
+            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
             <div class="foto-sample__likes">96</div>
         </div>
         <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="http://placehold.it/150x100" alt="picture-4"> </div>
+            <div class="foto-sample__img"> <img src="img/photo-4-mobile@1x.jpg" alt="picture-4" width="280" height="280"> </div>
             <h2 class="foto-sample__title">Мост дьявола</h2>
             <p>Автор фото: Антон</p>
-            <button type="button" class="foto-sample__like-btn">Like</button>
+            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
             <div class="foto-sample__likes">254</div>
         </div>
     </section>
     <section class="promo">
-        <h2>Вы еще сомневаетесь?</h2>
-        <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <h2 class="promo__title">Все еще сомневаетесь?</h2>
+        <p class="promo__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="promo__video">
-            <video controls src="http://placehold.it/150x100" poster="http://placehold.it/150x100"> </video>
+            <video controls="" src="http://placehold.it/150x100" poster="img/video-mobile@1x.jpg" width="320" height="220"> </video>
         </div>
     </section>
 
@@ -76,13 +81,13 @@
             <a href="#">#visitsedona</a>
         </div>
         <div class="social-links">
-            <a class="social-links__item" href="#">Twitter</a>
-            <a class="social-links__item" href="#">Facebook</a>
-            <a class="social-links__item" href="#">Youtube</a>
+            <a class="social-links__item social-links__item--twitter" href="#">Twitter</a>
+            <a class="social-links__item social-links__item--facebook" href="#">Facebook</a>
+            <a class="social-links__item social-links__item--youtube" href="#">Youtube</a>
         </div>
         <div class="page-footer__developer">
             <span>Разработано</span>
-            <a href="#"> </a>
+            <a href="#" class="page-footer__developer-img">htmlacademy</a>
         </div>
     </footer>
 </body>

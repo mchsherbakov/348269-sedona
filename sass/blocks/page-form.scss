@@ -1,0 +1,68 @@
+.page-form {
+  width: 320px;
+  padding-top: 30px;
+  outline: 1px dotted red;
+
+    .page-form__title {
+        font-family: $font-stack;
+        font-size: $font-base-size + 4px;
+        line-height: $base-line-height + 5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 22px;
+
+    }
+
+    .page-form__desc {
+        font-family: $font-stack;
+        font-size: $font-base-size;
+        line-height: $base-line-height + 3px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 24px;
+
+    }
+
+    .form-group {
+      border-top: 1px solid #e5e5e5;
+      margin-top: 7px;
+      margin-bottom: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+
+          .form-group__title {
+            font-family: $font-stack;
+            font-size: $font-base-size + 4px;
+            font-weight: bold;
+            line-height: $base-line-height + 5px;
+            text-transform: uppercase;
+            text-align: center;
+
+          }
+
+          .form__label {
+            font-family: $font-stack;
+            font-size: $font-base-size;
+            line-height: $base-line-height + 5px;
+            text-transform: uppercase;
+
+          }
+
+           button[type="submit"]  {
+            display: inline-block;
+            padding: 16px 47px;
+            font-family: $font-stack;
+            font-size: $font-base-size+7px;
+            font-weight: bold;
+            line-height: $base-line-height + 5px;
+            text-transform: uppercase;
+            color: $secondary-color;
+            background: $bg-color-menu;
+            border: none;
+
+          }
+    }
+
+
+}

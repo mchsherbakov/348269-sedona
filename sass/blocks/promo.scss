@@ -1,0 +1,28 @@
+.promo {
+  width: 320px;
+  padding-top: 23px;
+  outline: 1px dashed darkcyan;
+
+
+  .promo__title {
+    font-family: $font-stack;
+    font-size: $font-base-size + 4px;
+    line-height: $base-line-height + 5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .promo__desc {
+    font-family: $font-stack;
+    font-size: $font-base-size;
+    line-height: $base-line-height + 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 36px 41px;
+  }
+
+  .promo__video {
+
+  }
+
+}
