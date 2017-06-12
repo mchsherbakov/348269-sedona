@@ -4,54 +4,50 @@
     padding-left: 85px;
     padding-right: 85px;
     outline: 1px dotted navy;
-    .page-footer__hashtag {
-        margin-bottom: 41px;
-        a {
-            font-family: $font-stack;
-            font-size: $font-base-size + 7px;
-            line-height: $base-line-height + 5px;
-            font-weight: bold;
-            color: $primary-color;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
+}
+.page-footer__hashtag {
+    margin-bottom: 41px;
+}
+.page-footer__hashtag a {
+    font-size: 21px;
+    line-height: 1.23em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.social-links {
+    width: 151px;
+    height: 48px;
+    margin-bottom: 50px;
+    outline: 1px dotted blue;
+}
+.social-links__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 46px;
+    height: 48px;
+    outline: 1px dashed red;
+    font-size: 0;
+    &--twitter {
+        background: #81b3d2 url("../../img/icon-twitter.svg") no-repeat center;
     }
-    .social-links {
-        width: 151px;
-        height: 48px;
-        margin-bottom: 50px;
-        outline: 1px dotted blue;
-        .social-links__item {
-            display: inline-block;
-            vertical-align: top;
-            width: 46px;
-            height: 48px;
-            outline: 1px dashed red;
-            font-size: 0;
-        }
-        .social-links__item--twitter {
-            background: #81b3d2 url("../../img/icon-twitter.svg") no-repeat center;
-        }
-        .social-links__item--facebook {
-            background: #81b3d2 url("../../img/icon-facebook.svg") no-repeat center;
-        }
-        .social-links__item--youtube {
-            background: #81b3d2 url("../../img/icon-youtube.svg") no-repeat center;
-        }
+    &--facebook {
+        background: #81b3d2 url("../../img/icon-facebook.svg") no-repeat center;
     }
-    .page-footer__developer {
-        font-family: $font-stack;
-        font-size: $font-base-size;
-        line-height: $base-line-height + 5px;
-        text-transform: uppercase;
-        text-decoration: none;
+    &--youtube {
+        background: #81b3d2 url("../../img/icon-youtube.svg") no-repeat center;
     }
-    .page-footer__developer-img {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        background: url("../../img/logo-htmlacademy.svg") no-repeat center;
-        font-size: 0;
-        vertical-align: middle;
-    }
+}
+.page-footer__developer {
+    line-height: 1.85em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.page-footer__developer-img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    vertical-align: middle;
+    background: url("../../img/logo-htmlacademy.svg") no-repeat center;
 }

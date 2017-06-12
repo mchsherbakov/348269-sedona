@@ -1,41 +1,32 @@
 .search-block {
-  width: 280px;
-  padding: 10px 20px 49px 20px;
-  outline: 1px dashed pink;
-
+    width: 280px;
+    padding: 10px 20px 49px 20px;
+    outline: 1px dashed pink;
+}
 .search-block__title {
-  font-family: $font-stack;
-  font-size: $font-base-size + 7px;
-  line-height: $base-line-height + 5px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-
+    font-size: 21px;
+    line-height: 1.23em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
-
 .search-block__desc {
-  font-family: $font-stack;
-  font-size: $font-base-size;
-  line-height: $base-line-height + 3px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 26px;
-  margin-bottom: 38px;
+    margin-top: 26px;
+    margin-bottom: 38px;
+    line-height: 1.71em;
+    text-transform: uppercase;
+    text-align: center;
 }
-}
-
-.search-block__btn  {
-  font-family: $font-stack;
-  font-size: $font-base-size + 7px;
-  line-height: $base-line-height + 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: $secondary-color;
-  display: block;
-  width: 190px;
-  padding: 16px 45px;
-  background: $bg-color-menu;
-
+.search-block__btn {
+    display: block;
+    width: 190px;
+    padding: 16px 45px;
+    font-size: 21px;
+    line-height: 1.23em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: $secondary-color;
+    background: $bg-color-menu;
 }
