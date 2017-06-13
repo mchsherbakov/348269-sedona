@@ -1,0 +1,46 @@
+.page-form {
+    padding-top: 30px;
+    outline: 1px dotted red;
+}
+.page-form__title {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 1.44em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.page-form__desc {
+    margin-bottom: 24px;
+    line-height: 1.71em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form-group {
+    margin-top: 7px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+.form-group__title {
+    font-size: 18px;
+    line-height: 1.44em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form__label {
+    line-height: 1.85em;
+    text-transform: uppercase;
+}
+.form-group__btn {
+    display: inline-block;
+    padding: 16px 47px;
+    font-size: 21px;
+    line-height: 1.23em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $secondary-color;
+    background: $bg-color-menu;
+    border: none;
+}

@@ -1,0 +1,44 @@
+.gallery {
+    padding-top: 44px;
+    outline: 1px dashed magenta;
+}
+.gallery-title {
+    font-size: 18px;
+    line-height: 1.44em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.gallery-desc {
+    line-height: 1.71em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.foto-sample {
+    height: 415px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.foto-sample__title {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.71em;
+    text-transform: uppercase;
+}
+.foto-sample p {
+    padding: 0;
+    margin: 0;
+    margin-top: 14px;
+    line-height: 1.71em;
+}
+.foto-sample__likes {
+    display: inline-block;
+    margin-left: 15px;
+    line-height: 1.71em;
+    font-weight: bold;
+}

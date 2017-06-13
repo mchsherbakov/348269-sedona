@@ -1,0 +1,32 @@
+.failure-popup {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 1px dotted black;
+}
+.failure-popup__title {
+    font-size: 18px;
+    line-height: 1.44em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.failure-popup__desc {
+    margin-left: 32px;
+    margin-right: 35px;
+    line-height: 1.71em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.failure-popup__btn {
+    display: inline-block;
+    padding: 16px 80px;
+    margin: 15px 51px 19px 51px;
+    font-size: 21px;
+    line-height: 1.23em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $secondary-color;
+    background: $bg-color-menu;
+    border: none;
+}
