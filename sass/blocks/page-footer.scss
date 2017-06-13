@@ -7,13 +7,14 @@
 }
 .page-footer__hashtag {
     margin-bottom: 41px;
-}
-.page-footer__hashtag a {
-    font-size: 21px;
-    line-height: 1.23em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+
+    a {
+      font-size: 21px;
+      line-height: 1.23em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
 }
 .social-links {
     width: 151px;
@@ -28,17 +29,20 @@
     height: 48px;
     outline: 1px dashed red;
     font-size: 0;
+
     &--twitter {
-        background: #81b3d2 url("../../img/icon-twitter.svg") no-repeat center;
+        background: #81b3d2 url("../img/icon-twitter.svg") no-repeat center;
     }
+
     &--facebook {
-        background: #81b3d2 url("../../img/icon-facebook.svg") no-repeat center;
+        background: #81b3d2 url("../img/icon-facebook.svg") no-repeat center;
     }
+
     &--youtube {
-        background: #81b3d2 url("../../img/icon-youtube.svg") no-repeat center;
+        background: #81b3d2 url("../img/icon-youtube.svg") no-repeat center;
     }
 }
-.page-footer__developer {
+.page-footer__developer span {
     line-height: 1.85em;
     text-transform: uppercase;
     text-decoration: none;
@@ -47,7 +51,6 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    font-size: 0;
     vertical-align: middle;
-    background: url("../../img/logo-htmlacademy.svg") no-repeat center;
+
 }
