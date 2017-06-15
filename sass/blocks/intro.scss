@@ -5,17 +5,35 @@
     padding-top: 85px;
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat 100% 100%;
     background-position: center;
-    outline: 1px dotted grey;
 }
 .intro__img {
-    width: 280px;
-    height: 220px;
+    width: 100%;  //280px;
+    height: 100%; //220px;
 }
 .intro--small {
-    width: 255px;
     height: 115px;
     padding-top: 63px;
     padding-left: 45px;
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat 100% 100%;
     background-position: bottom;
+}
+@media #{$width-tablet} {
+    .intro {
+        height: 520px;
+        padding: 0;
+        outline: 2px dashed red;
+    }
+    .intro--small {
+        height: 292px;
+        padding: 0;
+    }
+}
+@media #{$width-desktop} {
+    .intro {
+        height: 520px;
+    }
+    .intro--small {
+        height: 292px;
+        padding: 0;
+    }
 }
