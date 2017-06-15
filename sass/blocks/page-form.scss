@@ -44,3 +44,56 @@
     background: $bg-color-menu;
     border: none;
 }
+@media #{$width-tablet} {
+    .page-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .page-form-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-group:nth-child(3),
+    .form-group:nth-child(1) {
+        width: 40%;
+    }
+    .form-group:nth-child(2),
+    .form-group:nth-child(4),
+    .form-group:nth-child(5) {
+        width: 80%;
+    }
+}
+@media #{$width-desktop} {
+    .page-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .page-form-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-group:nth-child(3),
+    .form-group:nth-child(1) {
+        width: 40%;
+    }
+    .form-group:nth-child(2),
+    .form-group:nth-child(4),
+    .form-group:nth-child(5) {
+        display: inline-block;
+        width: 80%;
+    }
+}

@@ -65,16 +65,21 @@
 }
 @media #{$width-desktop} {
     .gallery {
-        display: flex;
-        flex-direction: column;
+
     }
     .gallery-bottom {
-
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
     }
     .foto-sample {
-
+        flex-direction: column;
+        outline: 1px dotted blue;
     }
     .foto-sample:first-of-type {
-
+        flex-basis: 1200px;
     }
 }
