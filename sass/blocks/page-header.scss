@@ -25,13 +25,34 @@
 }
 @media #{$width-tablet} {
     .page-header {
+        position: relative;
         height: 55px;
         background-color: $bg-color-main;
   }
+    .btn-menu--menu-icon,
+    .btn-menu--close      {
+        visibility: hidden;
+    }
+    .sedona-logo {
+        position: absolute;
+        top: 0;
+        left: 43.5%;
+    }
 }
 
 @media #{$width-desktop} {
     .page-header {
+        position: relative;
         height: 57px;
+        background-color: $bg-color-main;
   }
+    .btn-menu--menu-icon,
+    .btn-menu--close      {
+        visibility: hidden;
+    }
+    .sedona-logo {
+        position: absolute;
+        top: 0;
+        left: 45.75%;
+    }
 }
