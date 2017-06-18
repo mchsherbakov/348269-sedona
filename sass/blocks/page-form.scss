@@ -69,6 +69,12 @@
     .form-group:nth-child(5) {
         width: 80%;
     }
+    .form-group:nth-child(1) {
+      order: 0;
+    }
+    .form-group:nth-child(3) {
+      order: -1;
+    }
 }
 @media #{$width-desktop} {
     .page-form {
