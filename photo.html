@@ -10,15 +10,14 @@
 
 <body class="container">
     <header class="page-header">
-
         <a href="index.html" class="sedona-logo">
             <img src="img/logo-sedona-mobile.svg" alt="picture-0">
         </a>
-        <button type="button" class="btn-menu">Открыть</button>
+        <button type="button" class="btn-menu btn-menu--menu-icon"></button>
         <nav class="menu">
             <ul class="menu-list">
                 <li class="menu-list__item">
-                    <a href="index.html">главная</a>
+                    <a href="index.html"">главная</a>
                 </li>
                 <li class="menu-list__item">
                     <a href="#">фото и видео</a>
@@ -31,41 +30,50 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="btn-menu">Закрыть</button>
+        <button type="button" class="btn-menu btn-menu--close"></button>
     </header>
-    <section class="intro intro--small">
+    <div class="intro intro--small">
         <img src="img/text-sedona.svg" alt="sedona-text" width="229" height="41">
-    </section>
+    </div>
     <section class="gallery">
-        <h1 class="gallery-title">Фото и видео</h1>
-        <p class="gallery-desc">Не можете решиться на путешествие из-за курса? фотографии помогут<br>вам забыть о политике и экономике</p>
-        <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="img/photo-1-mobile@1x.jpg" alt="picture-1" width="280" height="280"> </div>
-            <h2 class="foto-sample__title">Неродные просторы</h2>
-            <p>Автор фото: Борис</p>
-            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
-            <div class="foto-sample__likes">1350</div>
+        <div class="gallery-top">
+            <h1 class="gallery-title">Фото и видео</h1>
+            <p class="gallery-desc">Не можете решиться на путешествие из-за курса? фотографии помогут
+                <br>вам забыть о политике и экономике</p>
         </div>
-        <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="img/photo-2-mobile@1x.jpg" alt="picture-2" width="280" height="280"> </div>
-            <h2 class="foto-sample__title">Местная растительность</h2>
-            <p>Автор фото: Борис</p>
-            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
-            <div class="foto-sample__likes">1350</div>
-        </div>
-        <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="img/photo-3-mobile@1x.jpg" alt="picture-3" width="280" height="280"> </div>
-            <h2 class="foto-sample__title">Дорога на север</h2>
-            <p>Автор фото: Петр</p>
-            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
-            <div class="foto-sample__likes">96</div>
-        </div>
-        <div class="foto-sample">
-            <div class="foto-sample__img"> <img src="img/photo-4-mobile@1x.jpg" alt="picture-4" width="280" height="280"> </div>
-            <h2 class="foto-sample__title">Мост дьявола</h2>
-            <p>Автор фото: Антон</p>
-            <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like"></button>
-            <div class="foto-sample__likes">254</div>
+        <div class="gallery-bottom">
+            <div class="foto-sample">
+                <div class="foto-sample__img"> <img src="img/photo-1-mobile@1x.jpg" alt="picture-1" width="280" height="280"> </div>
+                <h2 class="foto-sample__title">Неродные просторы</h2>
+                <p>Автор фото: Борис</p>
+                <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like">
+                </button>
+                <div class="foto-sample__likes">1350</div>
+            </div>
+            <div class="foto-sample">
+                <div class="foto-sample__img"> <img src="img/photo-2-mobile@1x.jpg" alt="picture-2" width="280" height="280"> </div>
+                <h2 class="foto-sample__title">Местная растительность</h2>
+                <p>Автор фото: Борис</p>
+                <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like">
+                </button>
+                <div class="foto-sample__likes">1350</div>
+            </div>
+            <div class="foto-sample">
+                <div class="foto-sample__img"> <img src="img/photo-3-mobile@1x.jpg" alt="picture-3" width="280" height="280"> </div>
+                <h2 class="foto-sample__title">Дорога на север</h2>
+                <p>Автор фото: Петр</p>
+                <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like">
+                </button>
+                <div class="foto-sample__likes">96</div>
+            </div>
+            <div class="foto-sample">
+                <div class="foto-sample__img"> <img src="img/photo-4-mobile@1x.jpg" alt="picture-4" width="280" height="280"> </div>
+                <h2 class="foto-sample__title">Мост дьявола</h2>
+                <p>Автор фото: Антон</p>
+                <button type="button" class="foto-sample__like-btn"><img src="img/icon-like.svg" alt="Like">
+                </button>
+                <div class="foto-sample__likes">254</div>
+            </div>
         </div>
     </section>
     <section class="promo">
@@ -87,7 +95,7 @@
         </div>
         <div class="page-footer__developer">
             <span>Разработано</span>
-            <a href="#" class="page-footer__developer-img">htmlacademy</a>
+            <img src="img/logo-htmlacademy.svg" class="page-footer__developer-img" alt="htmlacademy">
         </div>
     </footer>
 </body>

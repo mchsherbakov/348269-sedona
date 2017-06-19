@@ -1,4 +1,56 @@
 .page-header {
+    position: relative;
+    height: 279px;
     background-color: $bg-color-main;
     outline: 1px dashed red;
+  }
+.sedona-logo {
+    position: absolute;
+    top: 223px;
+    left: 110px;
+}
+.btn-menu--close {
+    position: absolute;
+    top: 16px;
+    left: 271px;
+    background-color: $bg-color-menu;
+}
+.btn-menu--menu-icon {
+    position: absolute;
+    top: 239px;
+    right: 14px;
+    background-color: $bg-color-main;
+}
+@media #{$width-tablet} {
+    .page-header {
+        position: relative;
+        height: 55px;
+        background-color: $bg-color-main;
+  }
+    .btn-menu--menu-icon,
+    .btn-menu--close      {
+        visibility: hidden;
+    }
+    .sedona-logo {
+        position: absolute;
+        top: 0;
+        left: 43.5%;
+    }
+}
+
+@media #{$width-desktop} {
+    .page-header {
+        position: relative;
+        height: 57px;
+        background-color: $bg-color-main;
+  }
+    .btn-menu--menu-icon,
+    .btn-menu--close      {
+        visibility: hidden;
+    }
+    .sedona-logo {
+        position: absolute;
+        top: 0;
+        left: 45.75%;
+    }
 }
